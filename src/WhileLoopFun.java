@@ -91,5 +91,6 @@ public class WhileLoopFun {
      */
     public boolean isPrime(int number) {
             return isPrime(number);
+            //l
     }
 }
