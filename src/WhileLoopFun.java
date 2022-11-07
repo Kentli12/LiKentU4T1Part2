@@ -1,3 +1,4 @@
+
 public class WhileLoopFun {
 
     /**This class has no instance variables, so we can either include no constructor,
@@ -90,7 +91,14 @@ public class WhileLoopFun {
      but 1 has only a single divisor! (don’t believe it? Google it!)
      */
     public boolean isPrime(int number) {
-            return isPrime(number);
-            //l
+        if (number == 1) {
+            return false;
+        }
+        for (int i=2; i<number; i++){
+            if (number%i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
